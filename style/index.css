@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 .hamburger {
   display: none;
@@ -160,7 +161,6 @@
   filter: grayscale(100%);
 }
 .gerb_img {
-  /* width: 100%; */
   height: auto;
   object-fit: cover;
 }
@@ -287,26 +287,33 @@
 .service-button_wrapper {
   column-gap: 3%;
   width: 99%;
+  
 }
 .section_client {
   place-self: center;
 }
 .section_button_wrapper .swiper-slide{
   width: 80%;
+  
 }
 .initial_wrapper .swiper-slide {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  column-gap: 1%;
 }
 .section_gerb_button {
-  border: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(128, 128, 128, 0.039);
   cursor: pointer;
   place-self: center;
   border-radius: 5px;
   width: 262px;
   height: 136px;
   background: #E1F0FF;
-  transition: 0.3ms;
+  transition: 0.3s;
+}
+.initial-section_gerb_button {
+  width: 100%;
 }
 .section_gerb_button:hover {
   background-color:  #FFFFFF;
@@ -321,19 +328,20 @@
   -webkit-filter: grayscale(0%);
 }
 .section_service_button {
-  border: none;
-  width: 560px ;
+  box-sizing: border-box;
+  border: 1px solid rgba(128, 128, 128, 0.039);
+  width: 560px;
   height: 136px;
   background: #E1F0FF;
   border-radius: 5px;
   font-size: 24px;
   color: #4F5665;
+  transition: 0.3s;
 }
 .section_service_button:hover {
   border: 2px solid #0A64BB;
   background-color: #FFFFFF;
   color: #0A5099;
-  transition: 0.3ms;
 }
 .section_LF_wrapper {
   place-self: center;
@@ -362,6 +370,8 @@
   column-gap: 20px;
 }
 .section_public_wrapper {
+  box-sizing: border-box;
+  border: 1px solid rgba(189, 189, 189, 0.142);
   height: 300px;
   display: grid;
   background: #E1F0FF;
@@ -645,12 +655,27 @@
 /* TAX */
 
 .tax-card_wrapper {
+  box-sizing: border-box;
+  border: 1px solid rgba(184, 184, 184, 0.135);
   width: 90%;
   background: #E1F0FF;
   border-radius: 5px;
   padding: 20px;
   cursor: pointer;
-  transition: 0.3ms;
+  transition: 0.3s;
+}
+.tax {
+  box-sizing: border-box;
+  border: 1px solid rgba(184, 184, 184, 0.135);
+  width: 560px;
+  height: 371px;
+  transition: 0.3s;
+}
+.audit-card_wrapper {  
+  box-sizing: border-box;
+  border: 1px solid rgba(184, 184, 184, 0.135);
+  width: 560px;
+  height: 149px;
 }
 .tox_container {
   display: grid;
@@ -667,8 +692,8 @@
 .tax-card_wrapper:hover {
   background: #FFFFFF;
   border: 2px solid #0A64BB;
+  box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   border-radius: 5px;
-  transition: 0.3ms;
 }
 .tax_list{
   padding: 5px 15px;
@@ -681,6 +706,8 @@
 }
 
 .tax-viewpoint {
+  box-sizing: border-box;
+  border: 1px solid rgba(206, 206, 206, 0.237);
   display: grid;
   justify-items: center;
   padding: 20px;
@@ -688,14 +715,21 @@
   background: #E1F0FF;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .tax-viewpoint:hover {
   background: #FFFFFF;
   border: 2px solid #0A64BB;
   border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.135);
 }
 .tax-viewpoint:hover .tax_header {
   color: #0A64BB;
+}
+.audit-viewpoint {
+  box-sizing: border-box;
+  border: 1px solid rgba(206, 206, 206, 0.237);
+  width: 100%;
 }
 
 /* AUDIT */
@@ -802,10 +836,16 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   .tax-viewpoint {
     margin-bottom: 5%;
   }
+  .audit-viewpoint {
+    margin-bottom: 1%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .cards_container {
     width: 95%;
+  }
+  .tax {
+    height: 450px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -851,6 +891,9 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   .main_client_wrapper .section_LF_wrapper {
     margin-left: 4%;
   }
+  .gaverment_list {
+    list-style-position: inside;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -893,6 +936,24 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   }
   .tax-viewpoint {
     margin-bottom: 10%;
+  }
+  .audit-viewpoint {
+    margin-bottom: 1%;
+  }
+  .audit-section_public_container {
+    margin-bottom: 2%;
+  }
+  .audit_parg {
+    font-size: 13px;
+  }
+  .tax {
+    height: 555px;
+  }
+  .report-tox_container {
+    padding-bottom: 5%;
+  }
+  .second_section_parg {
+    font-size: 14px;
   }
 }
 
@@ -974,6 +1035,21 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 }
 .tax-viewpoint {
   margin-bottom: 18%;
+}
+.audit-viewpoint {
+  margin-bottom: 1%;
+}
+.audit-section_public_container {
+  margin-bottom: 2%;
+}
+.audit_parg {
+  font-size: 12px;
+}
+.tax {
+  height: 730px;
+}
+.report_button {
+  font-size: 20px;
 }
 }
 
@@ -1081,13 +1157,21 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   .second_section_container .section_LF_wrapper {
     margin-right: 15%;
   }
-  .section_public_container {
+  .tax-section_public_container {
     display: grid;
-    grid-template-columns: auto;
-    row-gap: 3%;
+    row-gap: 1%;
   }
   .tax-viewpoint {
     margin-bottom: 40%;
+}
+.audit-viewpoint {
+  margin-bottom: 1%;
+}
+.audit-section_public_container {
+  margin-bottom: 10%;
+}
+.audit_parg {
+  font-size: 13.5px;
 }
   .goverment_wrapper {
     padding-top: 1%;
@@ -1169,12 +1253,21 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 .tox_container {
   padding: 1% 6%;
 }
+.report-tox_container {
+  padding-bottom: 9%;
+}
 .audit-section_public_container {
   display: grid;
   row-gap: 2%;
 }
 .tax-card_wrapper {
   width: 100%;
+}
+.tax {
+  height: 385px;
+}
+.publication-tax_container {
+  padding-bottom: 10%;
 }
 }
 
@@ -1214,5 +1307,26 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 }
 .tax-viewpoint {
   margin-bottom: 60%;
+}
+.audit-viewpoint {
+  margin-bottom: 1%;
+}
+.audit-section_public_container {
+  margin-bottom: 17%;
+}
+.tax {
+  height: 500px;
+}
+.publication-tax_container {
+  padding-bottom: 15%;
+}
+.report-tox_container {
+  padding-bottom: 15%;
+}
+.audit-card_wrapper .tax_header {
+  font-size: 18px;
+}
+.audit-card_wrapper {
+  padding: 3%;
 }
 }
