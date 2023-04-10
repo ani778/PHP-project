@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Tax</title>
         <link rel="stylesheet" href="../PHP-project/style/index.css">
@@ -58,7 +61,9 @@
     </header>
     <main >
         <div>
-            <p class="goverment_main-parg">Home / Services /<span class="main_span"> Tax and Accounting </span></p>
+            <div class="goverment_main-parg parg-nav_link">
+                <a href="#">Home / </a><a href="#" class="main_span">Services /</a><a href="#" class="main_span">Tax and Accounting</a>
+            </div>
             <div class="tox_container">
                 <div class="team-header_container">
                     <h2 class="main_header header_about">TAX AND ACCOUNTING</h2>
@@ -205,12 +210,12 @@
                 <h5 class="footer_desc_header">Pages </h5>
                 <img class="desc_img p-3"  src="../PHP-project/assets/pages-i.svg"/>
                 <ul class="footer_desc_list">
-                    <li class="footer_desc_item">Home</li>
-                    <li class="footer_desc_item">About</li>
-                    <li class="footer_desc_item">Clients</li>
-                    <li class="footer_desc_item">Reports</li>
-                    <li class="footer_desc_item">Publications & News</li>
-                    <li class="footer_desc_item">Contact Us</li>
+                    <li class="footer_desc_item"><a href="#">Home</a></li>
+                    <li class="footer_desc_item"><a href="#">About</a></li>
+                    <li class="footer_desc_item"><a href="#">Clients</a></li>
+                    <li class="footer_desc_item"><a href="#">Reports</a></li>
+                    <li class="footer_desc_item"><a href="#">Publications & News</a></li>
+                    <li class="footer_desc_item"><a href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-contact_wrapper col">
@@ -218,7 +223,7 @@
                 <img class="desc_img p-3"  src="./assets/service-i.svg"/>
                 <div class="tax_wrapper">
                     <a class="footer_link_tax" href="#">Tax and accounting</a>
-                    <p class="footer_parg">Audit and Related Services</p>
+                    <a class="footer_parg">Audit and Related Services</a>
                 </div>
             </div>
             <div class="footer-contact_wrapper col">

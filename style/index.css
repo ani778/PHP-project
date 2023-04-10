@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 .hamburger {
   display: none;
@@ -183,13 +184,21 @@
 .about_h-a_parg {
   margin-bottom: 10%;
 }
+.parg-nav_link a {
+  text-decoration: none;
+  color: #8B909A;
+}
+.parg-nav_link a:hover {
+  text-decoration: none;
+  color: #344e85;
+}
 .main_list {
   width: 60%;
-  padding: 3%;
+  padding: 3% 0;
   list-style-position: inside;
 }
 .initial-main_list {
-  width: 90%;
+  width: 85%;
 }
 .abot_partner_img {
   width: 100%;
@@ -197,7 +206,7 @@
   object-fit: cover;
 }
 .main_listItem {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 21px;
   color: #8B909A;
 }
@@ -300,10 +309,11 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   column-gap: 1%;
+  padding-left: 20px;
 }
 .section_gerb_button {
   box-sizing: border-box;
-  border: 1px solid rgba(128, 128, 128, 0.039);
+  border: 2px solid rgba(128, 128, 128, 0.039);
   cursor: pointer;
   place-self: center;
   border-radius: 5px;
@@ -329,7 +339,7 @@
 }
 .section_service_button {
   box-sizing: border-box;
-  border: 1px solid rgba(128, 128, 128, 0.039);
+  border: 2px solid rgba(128, 128, 128, 0.039);
   width: 560px;
   height: 136px;
   background: #E1F0FF;
@@ -368,10 +378,11 @@
   grid-template-columns: auto auto;
   justify-content: center; 
   column-gap: 20px;
+  padding-right: 2%;
 }
 .section_public_wrapper {
   box-sizing: border-box;
-  border: 1px solid rgba(189, 189, 189, 0.142);
+  border: 2px solid rgba(189, 189, 189, 0.142);
   height: 300px;
   display: grid;
   background: #E1F0FF;
@@ -485,6 +496,13 @@
   color: #8B909A;
   padding: 0;
 }
+.footer_desc_list a {
+  text-decoration: none;
+  color: #8B909A;
+}
+.footer_desc_list a:hover {
+  color: #0A5099;
+}
 .footer_parg {
   color: #8B909A;
   font-size: 16px;
@@ -495,6 +513,14 @@
 .tax_wrapper {
   display: grid;
   row-gap: 5px;
+  cursor: pointer;
+}
+.tax_wrapper a {
+  text-decoration: none;
+  color: #8B909A;
+}
+.tax_wrapper a:hover {
+  color: #0A5099;
 }
 .footer_link_tax {
   color: #0A5099;
@@ -513,7 +539,7 @@
 }
 .footer_addres {
   display: grid;
-  width: 67%;
+  width: 64%;
   align-self: end;
 }
 .img_map{
@@ -545,7 +571,7 @@
 
 .client-main_container {
   display: grid;
-  padding: 5% ;
+  padding: 2%;
 }
 .client_button_wrapper{
   row-gap: 25px;
@@ -666,14 +692,14 @@
 }
 .tax {
   box-sizing: border-box;
-  border: 1px solid rgba(184, 184, 184, 0.135);
+  border: 2px solid rgba(184, 184, 184, 0.135);
   width: 560px;
   height: 371px;
   transition: 0.3s;
 }
 .audit-card_wrapper {  
   box-sizing: border-box;
-  border: 1px solid rgba(184, 184, 184, 0.135);
+  border: 2px solid rgba(184, 184, 184, 0.135);
   width: 560px;
   height: 149px;
 }
@@ -707,7 +733,7 @@
 
 .tax-viewpoint {
   box-sizing: border-box;
-  border: 1px solid rgba(206, 206, 206, 0.237);
+  border: 2px solid rgba(206, 206, 206, 0.237);
   display: grid;
   justify-items: center;
   padding: 20px;
@@ -728,7 +754,7 @@
 }
 .audit-viewpoint {
   box-sizing: border-box;
-  border: 1px solid rgba(206, 206, 206, 0.237);
+  border: 2px solid rgba(206, 206, 206, 0.237);
   width: 100%;
 }
 
@@ -752,10 +778,12 @@
   color: #FFFFFF;
   width: 100%;
   height: 48px;
-  font-size: 24px;
+  font-size: 21px;
   border: none;
 }
 .report_download-container {
+  box-sizing: border-box;
+  border: 2px solid #dbddde41;
   display: grid;
   align-items: center;
   background: #E1F0FF;
@@ -829,6 +857,11 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   border-radius: 5px;
   color: #FFFFFF;
 }
+@media only screen and (max-width: 1500px) {
+  .footer_addres {
+    width: 75%;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .swiper-button-next {
     left: 12.5%;   
@@ -845,7 +878,13 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
     width: 95%;
   }
   .tax {
-    height: 450px;
+    height: 100%;
+  }
+  .section_public_container .swiper-slide {
+    padding-right: 3%;
+  }
+  .footer_addres {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -893,6 +932,9 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   }
   .gaverment_list {
     list-style-position: inside;
+  }
+  .footer_addres {
+    width: 100%;
   }
 }
 
@@ -945,9 +987,6 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   }
   .audit_parg {
     font-size: 13px;
-  }
-  .tax {
-    height: 555px;
   }
   .report-tox_container {
     padding-bottom: 5%;
@@ -1017,6 +1056,9 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 }
 
 @media only screen and (max-width: 738px) {
+  .section_public_container .swiper-slide  {
+    padding-right: 4%;
+  }
   .main_client_wrapper .section_LF_wrapper {
     margin: 5% 0;
 }
@@ -1029,6 +1071,7 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 .initial_wrapper .swiper-slide {
   grid-template-columns: auto auto;
   margin: 0 auto;
+  padding-bottom: 3%;
 } 
 .service-button_wrapper {
   margin: 0 auto;
@@ -1044,9 +1087,6 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 }
 .audit_parg {
   font-size: 12px;
-}
-.tax {
-  height: 730px;
 }
 .report_button {
   font-size: 20px;
@@ -1187,6 +1227,7 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   .footer_description_wrapper {
     display: grid;
     grid-template-columns: auto;
+    row-gap: 1%;
   }
   .footer_logo-wrapper {
     display: grid;
@@ -1201,7 +1242,7 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   }
   .footer_addres {
     display: grid;
-    width: 38%;
+    width: 52%;
     align-self: end;
 }
   .checkbtn {
@@ -1241,7 +1282,9 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   .section_public_container .swiper-slide {
     grid-template-columns: auto;
     row-gap: 20px;
+    padding-right: 6%;
   }
+  
    .second_read_more p{
     padding-top: 0;
     margin-bottom: 0;
@@ -1262,9 +1305,6 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 }
 .tax-card_wrapper {
   width: 100%;
-}
-.tax {
-  height: 385px;
 }
 .publication-tax_container {
   padding-bottom: 10%;
@@ -1293,8 +1333,8 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
   font-size: 13px;
 }
 .cards_header {
-  margin-left: 15%;
   font-size: 20px;
+  text-align: center;
 }
 .main_client_wrapper {
   padding: 0 5%;
@@ -1314,9 +1354,6 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 .audit-section_public_container {
   margin-bottom: 17%;
 }
-.tax {
-  height: 500px;
-}
 .publication-tax_container {
   padding-bottom: 15%;
 }
@@ -1328,5 +1365,11 @@ box-shadow: 0 8px 16px 0 rgba(156, 155, 156, 0.2);
 }
 .audit-card_wrapper {
   padding: 3%;
+}
+.section_public_container .swiper-slide {
+  padding-right: 7%;
+}
+.footer_addres {
+  width: 65%;
 }
 }
